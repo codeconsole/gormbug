@@ -1,4 +1,4 @@
-Grails 5.0.0.M2
+Grails 5.0.0.RC1
 
 ```
 grails run-app
