@@ -4,6 +4,9 @@ See https://github.com/grails/gorm-hibernate5/issues/303
 
 
 ```
+sdk use grails 5.0.0.RC2
+git clone https://github.com/codeconsole/gormbug
+cd gormbug
 grails run-app
 ```
 
