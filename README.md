@@ -1,4 +1,7 @@
-Grails 5.0.0.RC1
+# Grails 5.0.0.RC2
+
+See https://github.com/grails/gorm-hibernate5/issues/303
+
 
 ```
 grails run-app

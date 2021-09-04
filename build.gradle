@@ -18,8 +18,8 @@ apply plugin:"idea"
 apply plugin:"war"
 apply plugin:"org.grails.grails-web"
 apply plugin:"com.github.erdi.webdriver-binaries"
-apply plugin:"org.grails.grails-gsp"
 apply plugin:"com.bertramlabs.asset-pipeline"
+apply plugin:"org.grails.grails-gsp"
 
 repositories {
     maven { url "https://repo.grails.org/grails/core" }
@@ -35,7 +35,6 @@ configurations {
 
 dependencies {
     developmentOnly("org.springframework.boot:spring-boot-devtools")
-//    compile "org.grails:grails-validation:3.3.1.BUILD-SNAPSHOT"
     compileOnly "io.micronaut:micronaut-inject-groovy"
     console "org.grails:grails-console"
     implementation "org.springframework.boot:spring-boot-starter-logging"
@@ -55,15 +54,15 @@ dependencies {
     implementation "org.grails.plugins:cache"
     implementation "org.grails.plugins:async"
     implementation "org.grails.plugins:scaffolding"
-    implementation "org.grails.plugins:events"
     implementation "org.grails.plugins:hibernate5"
     //implementation "org.grails.plugins:hibernate5:7.0.3" // working
-    implementation "org.grails:grails-datastore-gorm-hibernate5:7.1.0.RC2"
-    implementation "org.hibernate:hibernate-core:5.5.6"
+    implementation "org.grails:grails-datastore-gorm-hibernate5:7.1.0.RC3"
+    implementation "org.hibernate:hibernate-core:5.5.7.Final"
+    implementation "org.grails.plugins:events"
     implementation "org.grails.plugins:gsp"
     profile "org.grails.profiles:web"
     runtimeOnly "org.glassfish.web:el-impl:2.2.1-b05"
-    runtimeOnly "com.h2database:h2:1.4.200"
+    runtimeOnly "com.h2database:h2"
     runtimeOnly "org.apache.tomcat:tomcat-jdbc"
     runtimeOnly "javax.xml.bind:jaxb-api:2.3.1"
     runtimeOnly "com.bertramlabs.plugins:asset-pipeline-grails:3.3.3"
