@@ -11,7 +11,7 @@ abstract class ScheduleService {
     abstract public Schedule get(Serializable id)
 
     List<Schedule> list(Map args) {
-        def u = mainService.getUserOrCurrentUser(args.userId)
+        def u = mainService.getUser(args.userId)
         u? Schedule.where { users.id == u.id }.list() : []
     }
 

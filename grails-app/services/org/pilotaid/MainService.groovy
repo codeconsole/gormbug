@@ -11,14 +11,4 @@ class MainService {
     User getUser(id) {
         id.toString().isNumber()? User.load(id) : User.findByUsername(id)
     }
-
-    User getUserOrCurrentUser(id) {
-    	if (!id) {
-    		if (springSecurityService.isLoggedIn() && springSecurityService.principal) {
-    			return getUser("${springSecurityService.principal.id}")	
-    		}
-    		return null
-    	}
-        getUser(id)
-    }
 }
