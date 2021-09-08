@@ -1,7 +1,6 @@
 # Grails 5.0.0.RC2 - Controllers Render as Content-Type: application/xhtml depending on Service injection order
 
-See https://github.com/grails/gorm-hibernate5/issues/303
-
+See https://github.com/grails/grails-core/issues/12057
 
 ```
 sdk use grails 5.0.0.RC2
@@ -10,11 +9,12 @@ cd gormbug
 grails run-app
 ```
 
-
-Using Chrome or Safari
+Using Chrome or Safari in a private window
 http://localhost:8080/link
 
 Notice page is sent with content type xhtml 
+
+![application/xhtml+xml;charset=UTF-8](https://raw.githubusercontent.com/codeconsole/gormbug/master/screenshots/chrome-error.jpg)
 
 Next, do either of the following:
 ```
@@ -30,3 +30,8 @@ then
 ```
 grails run-app
 ```
+
+Using Chrome or Safari in a private window
+http://localhost:8080/link
+
+and notice the problem went away and the page renders correctly.
