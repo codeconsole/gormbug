@@ -1,9 +1,9 @@
-# Grails 5.0.0.RC2 - Controllers Render as Content-Type: application/xhtml depending on Service injection order
+# Grails 5.0.0-RC3 - Controllers Render as Content-Type: application/xhtml depending on Service injection order
 
 See https://github.com/grails/grails-core/issues/12057
 
 ```
-sdk use grails 5.0.0.RC2
+sdk use grails 5.0.0-RC3
 git clone https://github.com/codeconsole/gormbug
 cd gormbug
 grails run-app
